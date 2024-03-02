@@ -1,0 +1,192 @@
+commonly used Git commands:
+
+### Configuration
+- **Set User Name:**
+  ```bash
+  git config --global user.name "Your Name"
+  ```
+
+- **Set User Email:**
+  ```bash
+  git config --global user.email "youremail@example.com"
+  ```
+
+- **List All Configurations:**
+  ```bash
+  git config --list
+  ```
+
+### Repository Initialization
+- **Initialize a Repository:**
+  ```bash
+  git init
+  ```
+
+- **Clone a Repository:**
+  ```bash
+  git clone <repository_URL>
+  ```
+
+### Staging and Committing
+- **Add Changes to Staging Area:**
+  ```bash
+  git add <file_name>
+  ```
+
+- **Add All Changes to Staging Area:**
+  ```bash
+  git add .
+  ```
+
+- **Commit Changes:**
+  ```bash
+  git commit -m "Commit message"
+  ```
+
+- **Amend the Last Commit:**
+  ```bash
+  git commit --amend
+  ```
+
+### Branching
+- **Create a New Branch:**
+  ```bash
+  git branch <branch_name>
+  ```
+
+- **Switch to a Branch:**
+  ```bash
+  git checkout <branch_name>
+  ```
+
+- **Create and Switch to a New Branch:**
+  ```bash
+  git checkout -b <branch_name>
+  ```
+
+- **Delete a Branch:**
+  ```bash
+  git branch -d <branch_name>
+  ```
+
+- **List Branches:**
+  ```bash
+  git branch
+  ```
+
+### Merging
+- **Merge Changes from Another Branch:**
+  ```bash
+  git merge <branch_name>
+  ```
+
+### Remote Repositories
+- **Add a Remote Repository:**
+  ```bash
+  git remote add <remote_name> <repository_URL>
+  ```
+
+- **List Remote Repositories:**
+  ```bash
+  git remote -v
+  ```
+
+- **Fetch Changes from a Remote Repository:**
+  ```bash
+  git fetch <remote_name>
+  ```
+
+- **Pull Changes from a Remote Repository:**
+  ```bash
+  git pull <remote_name> <branch_name>
+  ```
+
+- **Push Changes to a Remote Repository:**
+  ```bash
+  git push <remote_name> <branch_name>
+  ```
+
+- **Push Changes to a Remote Repository (New Branch):**
+  ```bash
+  git push -u <remote_name> <branch_name>
+  ```
+
+### Status and Logs
+- **View Status of Working Directory:**
+  ```bash
+  git status
+  ```
+
+- **View Commit History:**
+  ```bash
+  git log
+  ```
+
+- **View Changes Made in a File:**
+  ```bash
+  git diff <file_name>
+  ```
+
+### Undoing Changes
+- **Discard Changes in Working Directory:**
+  ```bash
+  git checkout -- <file_name>
+  ```
+
+- **Unstage a File:**
+  ```bash
+  git reset HEAD <file_name>
+  ```
+
+- **Undo the Last Commit and Keep Changes:**
+  ```bash
+  git reset --soft HEAD~1
+  ```
+
+- **Undo the Last Commit and Discard Changes:**
+  ```bash
+  git reset --hard HEAD~1
+  ```
+
+### Tagging
+- **Create a Tag:**
+  ```bash
+  git tag <tag_name>
+  ```
+
+- **List Tags:**
+  ```bash
+  git tag
+  ```
+
+- **Push Tags to Remote Repository:**
+  ```bash
+  git push --tags
+  ```
+
+### Git Submodules
+- **Add a Submodule:**
+  ```bash
+  git submodule add <repository_URL>
+  ```
+
+- **Update Submodules:**
+  ```bash
+  git submodule update --init --recursive
+  ```
+
+### Miscellaneous
+- **Git Help:**
+  ```bash
+  git help
+  ```
+
+- **Ignore Files with .gitignore:**
+  Create a `.gitignore` file in the root of your repository
+
+- **Check Version of Git:**
+  ```bash
+  git --version
+  ```
+
+These are just some of the many commands available in Git. For more detailed information on each command, you can refer to the official Git documentation: [Git - Documentation](https://git-scm.com/doc)
